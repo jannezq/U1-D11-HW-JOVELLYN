@@ -14,11 +14,22 @@ function changeAddress(newAddress) {
 }
 
 function seeImgs() {
-  let imgNodes = document.getElementById("hideImg");
-  if (imgNodes.style.display === "none") {
+  let imgNodes = document.getElementsByClassName("hideImg");
+  /*if (imgNodes.style.display === "none") {
     imgNodes.style.display = "block";
   } else {
     imgNodes.style.display = "none";
+  }*/
+
+  //   for (let i = 0; i < imgNodes.length; i++) {
+  //     let imgNodes = imgNodes[i]
+
+  //     imgNodes.classList.toggle('tableImg')
+
+  if (imgNodes.style.visibility === "visible") {
+    imgNodes.style.visibility = "hidden";
+  } else {
+    imgNodes.style.visibility = "visible";
   }
 }
 
