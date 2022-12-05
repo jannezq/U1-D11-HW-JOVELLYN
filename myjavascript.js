@@ -15,23 +15,27 @@ function changeAddress(newAddress) {
 
 function seeImgs() {
   let imgNodes = document.getElementsByClassName("hideImg");
-  /*if (imgNodes.style.display === "none") {
-    imgNodes.style.display = "block";
+  if (imgNodes.style.visibility === "visible") {
+    imgNodes.style.visibility = "hidden";
   } else {
-    imgNodes.style.display = "none";
-  }*/
+    imgNodes.style.visibility = "visible";
+  }
 
   //   for (let i = 0; i < imgNodes.length; i++) {
   //     let imgNodes = imgNodes[i]
 
   //     imgNodes.classList.toggle('tableImg')
 
-  if (imgNodes.style.visibility === "visible") {
+  /*if (imgNodes.style.visibility === "visible") {
     imgNodes.style.visibility = "hidden";
   } else {
     imgNodes.style.visibility = "visible";
-  }
+  }*/
 }
+const seeImgss = function () {
+  let imgNodes = document.getElementsByClassName("hideImg");
+  imgNodes.classList.toggle("hidden");
+};
 
 function openLink1() {
   window.open(
